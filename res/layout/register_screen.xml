@@ -422,6 +422,25 @@
                     android:textColor="@color/black"
                     android:textSize="16.0sp" />
             </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dip"
+                android:paddingTop="12.0dip"
+                android:text="Mobile Number:"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="30.0dip"
+                android:padding="8.0dip"
+                android:textColor="#ff2d2d2d"
+                android:textSize="18.0sp" />
 
             <Button
                 android:id="@+id/registersubmit"
