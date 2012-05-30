@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?contact_card_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/cfg_main_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="?activity_title_bg" >
+
+        <Button
+            android:id="@+id/btn_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/btn_title_back_selector"
+            android:text="@string/btn_title_back"
+            android:textColor="@color/white"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/textview_top_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/register_screen_title"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:fadingEdge="none"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="12.0dip" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dip"
+                android:paddingTop="12.0dip"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:minHeight="30.0dip"
+                android:padding="8.0dip"
+                android:textColor="#ff2d2d2d"
+                android:textSize="18.0sp" />
+
+            <TableLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/text_normal"
+                android:orientation="vertical"
+                android:stretchColumns="0" >
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/gender"
+                        android:textColor="@color/black"
+                        android:textSize="16dip" />
+
+                    <ToggleButton
+                        android:id="@+id/genderbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5px"
+                        android:layout_marginTop="10px"
+                        android:textColor="@color/black"
+                        android:textOff="@string/F"
+                        android:textOn="@string/M"
+                        android:textSize="16dip" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dip"
+                android:paddingTop="12.0dip"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/passwordentry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="number"
+                android:minHeight="30.0dip"
+                android:padding="8.0dip"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/confirmpassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dip"
+                android:paddingTop="12.0dip"
+                android:text="@string/confirmpassword"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/confirmpasswordentry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="number"
+                android:minHeight="30.0dip"
+                android:padding="8.0dip"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/preferencelbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dip"
+                android:paddingTop="12.0dip"
+                android:text="@string/preference"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_preference"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/setting_single"
+                android:clickable="true"
+                android:focusable="true" >
+
+                <ImageView
+                    android:id="@+id/imageview_right1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/item_go_icon" />
+
+                <TextView
+                    android:id="@+id/preference_default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/imageview_right1"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text="@string/PreA"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/occupationlbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dip"
+                android:paddingTop="12.0dip"
+                android:text="@string/occupation"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_occupation"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/setting_single"
+                android:clickable="true"
+                android:focusable="true" >
+
+                <ImageView
+                    android:id="@+id/imageview_right2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/item_go_icon" />
+
+                <TextView
+                    android:id="@+id/occupation_default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/imageview_right2"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text="@string/Employed"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/educationlbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dip"
+                android:paddingTop="12.0dip"
+                android:text="@string/education"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_education"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/setting_single"
+                android:clickable="true"
+                android:focusable="true" >
+
+                <ImageView
+                    android:id="@+id/imageview_right3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/item_go_icon" />
+
+                <TextView
+                    android:id="@+id/education_default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/imageview_right3"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text="@string/Graduate"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/locationlbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dip"
+                android:paddingTop="12.0dip"
+                android:text="@string/location"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/locationentry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:minHeight="30.0dip"
+                android:padding="8.0dip"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/brandlbl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dip"
+                android:paddingTop="12.0dip"
+                android:text="@string/brand"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/brandentry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:minHeight="30.0dip"
+                android:padding="8.0dip"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/scratchlabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dip"
+                android:paddingTop="12.0dip"
+                android:text="@string/Scratch_Code"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/scratchentry"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:minHeight="30.0dip"
+                android:padding="8.0dip"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/setting_single"
+                android:clickable="true"
+                android:focusable="true" >
+
+                <TextView
+                    android:id="@+id/date_of_birth_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9.0dip"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="10.0dip"
+                    android:text="@string/Date_of_Birth"
+                    android:textColor="#ff2d2d2d"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/date_default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/date_of_birth_text"
+                    android:layout_marginLeft="9.0dip"
+                    android:paddingBottom="10.0dip"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text="2012/01/01"
+                    android:textColor="#ff8d8d8d"
+                    android:textSize="12.0sp" />
+
+                <ImageView
+                    android:id="@+id/date_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/item_go_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/gatewaylabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dip"
+                android:paddingTop="12.0dip"
+                android:text="@string/Select_Gateway"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_gateway"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/setting_single"
+                android:clickable="true"
+                android:focusable="true" >
+
+                <ImageView
+                    android:id="@+id/imageview_right4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/item_go_icon" />
+
+                <TextView
+                    android:id="@+id/gateway_default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/imageview_right3"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text="@string/GPRS_Gate"
+                    android:textColor="@color/black"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/registersubmit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="10px"
+                android:text="@string/Submit" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

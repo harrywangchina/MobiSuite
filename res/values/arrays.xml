@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preference">
+        <item>@string/PreA</item>
+        <item>@string/PreB</item>
+        <item>@string/PreC</item>
+    </string-array>
+    <string-array name="occupation">
+        <item>@string/Employed</item>
+        <item>@string/Business</item>
+        <item>@string/Doctor</item>
+        <item>@string/IT</item>
+        <item>@string/education</item>
+        <item>@string/Law</item>
+        <item>@string/Other</item>
+    </string-array>
+    <string-array name="education">
+        <item>@string/Graduate</item>
+        <item>@string/Post_Graduate</item>
+        <item>@string/Engineer</item>
+        <item>@string/MBA</item>
+    </string-array>
+    <string-array name="Select_Gateway">
+        <item>@string/GPRS_Gate</item>
+        <item>@string/Pri_Gate</item>
+        <item>@string/Sec_Gate</item>
+    </string-array>
+    
+    <string-array name="call_control">
+        <item>@string/off</item>
+        <item>@string/whitelist_mode</item>
+        <item>@string/blacklist_mode</item>
+    </string-array>
+    <string-array name="list_type">
+        <item>@string/whitelist</item>
+        <item>@string/blacklist</item>
+    </string-array>
+     <string-array name="sms_hide_type">
+        <item>@string/disabled</item>
+        <item>@string/selected_contacts</item>
+         <item>@string/all_contacts</item>
+    </string-array>
+    <string-array name="filter_action">
+        <item>@string/reject</item>
+        <item>@string/reject_with_sms</item>
+    </string-array>
+     <string-array name="filter_operate">
+        <item>@string/edit</item>
+        <item>@string/delete</item>
+    </string-array>
+  </resources>

@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?contact_card_bg"
+    android:minWidth="1024.0dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10.0dip" >
+
+        <EditText
+            android:id="@+id/name_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/number_edittext"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5.0dip"
+            android:background="@drawable/text_select"
+            android:inputType="textMultiLine" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/name_edittext"
+            android:layout_alignBottom="@+id/name_edittext"
+            android:layout_alignParentLeft="true"
+            android:text="@string/name"
+            android:textColor="@color/text_color"
+            android:textSize="18.0sp" />
+
+        <EditText
+            android:id="@+id/number_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/name_edittext"
+            android:layout_toRightOf="@+id/number"
+            android:background="@drawable/text_select"
+            android:digits="0123456789+-,"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/number_edittext"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/name_edittext"
+            android:gravity="center_vertical"
+            android:paddingRight="5.0dip"
+            android:text="@string/number"
+            android:textColor="@color/text_color"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip" >
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="0dp"
+            android:layout_height="40.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_common_selector"
+            android:text="@string/ok"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_btn_common" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="40.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_common_selector"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_btn_common" />
+    </LinearLayout>
+
+</LinearLayout>

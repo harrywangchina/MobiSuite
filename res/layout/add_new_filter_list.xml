@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?contact_card_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/cfg_main_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="?activity_title_bg" >
+
+        <Button
+            android:id="@+id/btn_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/btn_title_back_selector"
+            android:text="@string/btn_title_back"
+            android:textColor="@color/white"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/textview_top_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/add_new_filter_list"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/cfg_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:fadingEdge="none"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/cfg_main_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="12.0dip"
+          >
+         <TextView 
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/list_name"
+             android:textColor="@color/text_color"
+             android:textSize="18.0sp"
+             />
+          <EditText 
+              android:id="@+id/list_name_edittext"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/text_select"
+              android:gravity="top|left|center"
+              android:minHeight="30.0dip"
+              android:padding="8.0dip"
+              />
+          <TextView 
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/list_action"
+             android:textColor="@color/text_color"
+             android:layout_marginTop="5.0dip"
+             android:textSize="18.0sp"
+             />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               >
+
+                <RelativeLayout
+                    android:id="@+id/layout_list_action"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:background="@drawable/setting_single"
+                    android:clickable="true"
+                    android:focusable="true" >
+                    <TextView
+                        android:id="@+id/list_action_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="9.0dip"
+                        android:padding="10.0dip"
+                        android:text="@string/reject"
+                        android:textColor="#ff2d2d2d"
+                        android:textSize="18.0sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15.0dip"
+                        android:background="@drawable/item_go_icon" />
+                </RelativeLayout>
+            </LinearLayout>
+             <TextView 
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/sms_auto_response"
+             android:textColor="@color/text_color"
+             android:layout_marginTop="5.0dip"
+             android:textSize="18.0sp"
+             />
+            <EditText 
+              android:id="@+id/sms_content_edittext"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/text_select"
+              android:gravity="top|left|center"
+              android:minHeight="160.0dip"
+              android:padding="8.0dip"
+              />
+              
+        </LinearLayout>
+    </ScrollView>
+      <Button
+	        android:id="@+id/submit_btn"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="5.0dip"
+	        android:layout_marginLeft="30.0dip"
+	        android:layout_marginRight="30.0dip"
+	        android:layout_marginTop="5.0dip"
+	        android:background="@drawable/button_common_selector"
+	        android:text="@string/submit"
+	        android:textColor="@color/black"
+	        android:textSize="@dimen/text_btn_common" />
+</LinearLayout>

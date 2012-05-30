@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="onward.mobisuite"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application
+        android:allowClearUserData="false"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/onward.mobisuite.Default" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".MobiSuite" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegistActivity" />
+        <activity android:name=".antivirus.AntiVirusActivity" />
+         <activity android:name=".antivirus.UserScanActivity" />
+        <activity android:name=".antivirus.ScheduleScanActivity" />
+        <activity android:name=".antimalware.AntiMalwareActivity" />
+        <activity android:name=".antitheft.AntiTheftActivity" />
+        <activity android:name=".contactsbackup.ContactsBackupActivity" />
+        <activity android:name=".contactsbackup.BackupContactActivity" />
+        <activity android:name=".contactsbackup.ContactsBackupSettingsActivity" />
+        <activity android:name=".privacy.PrivacyActivity" />
+        <activity android:name=".privacy.PrivateFoldersActivity" />
+        <activity android:name=".privacy.SelectFolderActivity" />
+        <activity android:name=".privacy.PrivateContactsActivity" />
+        <activity android:name=".privacy.PrivacySettingsActivity" />
+        <activity android:name=".callfilter.CallFilterActivity" />
+        <activity android:name=".callfilter.FilterListActivity" />
+        <activity android:name=".callfilter.AddNewFilterListActivity" />
+        <activity android:name=".callfilter.FilterListSettingsActivity" />
+        <activity android:name=".callfilter.FilterNumberListActivity" />
+        <activity android:name=".smsscheduler.SMSSchedulerActivity" />
+        <activity android:name=".smsscheduler.ScheduleSMSActivity" />
+        <activity android:name=".smsscheduler.ScheduledListActivity" />
+        <activity android:name=".smsscheduler.BulkSMSActivity" />
+        <activity android:name=".smsscheduler.SMSTemplatesActivity" />
+        <activity android:name=".smsscheduler.ChooseContactsActivity"  android:theme="@style/MSDialog" />
+        <activity android:name=".setting.SettingsActivity" >
+        </activity>
+        <activity android:name=".setting.SettingsPasswordActivity" >
+        </activity>
+        <activity android:name=".HelpActivity"/>
+        <activity android:name=".AboutUsActivity"/>
+        <activity android:name=".utils.DialogActivity"  android:theme="@style/MSDialog" />
+        <activity android:name=".utils.DialogListActivity"  android:theme="@style/MSDialog" />
+        <activity android:name=".utils.DialogInputActivity"  android:theme="@style/MSDialog" />
+        <activity android:name=".privacy.InputPhoneNumberActivity"  android:theme="@style/MSDialog" />
+        
+    </application>
+
+</manifest>
